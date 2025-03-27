@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechTower - News</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="window.location.href='index.html'">
+      <img src="logo.png" alt="TechTower Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="desktops.html">Desktops</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." aria-label="Search products">
+      <button onclick="searchProduct()" aria-label="Search">Search</button>
+    </div>
+  </header>
+
+  <section id="news" class="tab-content">
+    <h2>News</h2>
+    <div class="news-content">
+      <p>    
+        The history of desktop computers dates back to the 1970s when the first personal computers were introduced. Companies like IBM and Apple revolutionized the industry with their innovative designs and user-friendly interfaces. Over the decades, desktops have evolved from bulky machines to sleek, powerful devices capable of handling complex tasks like gaming, video editing, and more. Today, desktops remain a popular choice for gamers and professionals alike due to their customization options and performance capabilities.
+      </p>
+
+    </div>
+
+    <!-- Subscription Form -->
+    <div class="subscription-form">
+      <h3>Subscribe for Weekly Updates</h3>
+      <form id="subscribe-form">
+        <input type="email" id="subscribe-email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div id="subscription-message" class="hidden">Thank you for subscribing!</div>
+    </div>
+  </section>
+     <br>
+     <br>
+
+
+
+   <!-- Footer -->
+   <footer>
+    <div class="footer-content">
+      <!-- Left Side: WhatsApp Numbers -->
+      <div class="footer-section">
+        <h3>Contact Us on WhatsApp</h3>
+        <ul>
+          <li><a href="https://wa.me/5011234567">+501 123-4567</a></li>
+          <li><a href="https://wa.me/5012345678">+501 234-5678</a></li>
+          <li><a href="https://wa.me/5013456789">+501 345-6789</a></li>
+        </ul>
+      </div>
+
+      <!-- Middle: Email Addresses -->
+      <div class="footer-section">
+        <h3>Email Us</h3>
+        <ul>
+          <li><a href="mailto:support@techtower.com">support@techtower.com</a></li>
+          <li><a href="mailto:sales@techtower.com">sales@techtower.com</a></li>
+          <li><a href="mailto:info@techtower.com">info@techtower.com</a></li>
+        </ul>
+      </div>
+
+      <!-- Middle: Locations -->
+      <div class="footer-section">
+        <h3>Our Locations</h3>
+        <ul>
+          <li><a href="https://maps.app.goo.gl/WmurFi1jDcYjMkwz7" target="_blank">Orange Walk</a></li>
+          <li><a href="https://maps.app.goo.gl/5sSgth7XUNBfuuNh7" target="_blank">Belize City</a></li>
+          <li><a href="https://maps.app.goo.gl/GdhE1dpQNYwkrE3h9" target="_blank">Cayo</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Side: Jobs -->
+      <div class="footer-section">
+        <h3>Jobs</h3>
+        <ul>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc8tH-EK8CVgPwNdVaZNhRnMOlpg4OGz8r_qvM5JM--Op6apg/viewform?usp=sharing">IT Specialist</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc8tH-EK8CVgPwNdVaZNhRnMOlpg4OGz8r_qvM5JM--Op6apg/viewform?usp=sharing">Sales Manager</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc8tH-EK8CVgPwNdVaZNhRnMOlpg4OGz8r_qvM5JM--Op6apg/viewform?usp=sharing">Support Specialist</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>&copy; 2025 TechTower. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

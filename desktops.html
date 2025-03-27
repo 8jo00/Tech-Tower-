@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechTower - Desktops</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo" onclick="window.location.href='index.html'">
+      <img src="logo.png" alt="TechTower Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="desktops.html">Desktops</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." aria-label="Search products">
+      <button onclick="searchProduct()" aria-label="Search">Search</button>
+    </div>
+  </header>
+
+
+    <div class="desktop-grid">
+      <!-- Desktop 1: Blaze Pro -->
+      <div class="desktop-item" data-name="blaze-pro">
+        <img src="d1.jpeg" alt="Blaze Pro">
+        <h3>Blaze Pro</h3>
+        <p>High-performance gaming PC with RGB lighting.</p>
+        <ul>
+          <li>CPU: Intel i9-13900K</li>
+          <li>RAM: 32GB DDR5</li>
+          <li>Storage: 1TB NVMe SSD</li>
+          <li>GPU: RTX 4090</li>
+        </ul>
+        <span>$7,500 BZD</span>
+        <button class="add-to-cart" onclick="addToCart('Blaze Pro', 7500)">Add to Cart</button>
+      </div>
+  
+      <!-- Desktop 2: Thunder X -->
+      <div class="desktop-item" data-name="thunder-x">
+        <img src="d2.jpeg" alt="Thunder X">
+        <h3>Thunder X</h3>
+        <p>Mid-range gaming PC for competitive gamers.</p>
+        <ul>
+          <li>CPU: AMD Ryzen 7 7800X</li>
+          <li>RAM: 16GB DDR4</li>
+          <li>Storage: 500GB SSD + 1TB HDD</li>
+          <li>GPU: RTX 4070</li>
+        </ul>
+        <span>$4,500 BZD</span>
+        <button class="add-to-cart" onclick="addToCart('Thunder X', 4500)">Add to Cart</button>
+      </div>
+  
+      <!-- Desktop 3: Frost Nova -->
+      <div class="desktop-item" data-name="frost-nova">
+        <img src="d3.jpeg" alt="Frost Nova">
+        <h3>Frost Nova</h3>
+        <p>Compact gaming PC with liquid cooling.</p>
+        <ul>
+          <li>CPU: Intel i7-13700K</li>
+          <li>RAM: 16GB DDR5</li>
+          <li>Storage: 1TB SSD</li>
+          <li>GPU: RTX 4060 Ti</li>
+        </ul>
+        <span>$5,000 BZD</span>
+        <button class="add-to-cart" onclick="addToCart('Frost Nova', 5000)">Add to Cart</button>
+      </div>
+  
+      <!-- Desktop 4: Titan Xtreme -->
+      <div class="desktop-item" data-name="titan-xtreme">
+        <img src="d4.jpeg" alt="Titan Xtreme">
+        <h3>Titan Xtreme</h3>
+        <p>Ultimate gaming PC for enthusiasts.</p>
+        <ul>
+          <li>CPU: AMD Ryzen 9 7950X</li>
+          <li>RAM: 64GB DDR5</li>
+          <li>Storage: 2TB NVMe SSD</li>
+          <li>GPU: RTX 4090</li>
+        </ul>
+        <span>$9,000 BZD</span>
+        <button class="add-to-cart" onclick="addToCart('Titan Xtreme', 9000)">Add to Cart</button>
+      </div>
+  
+      <!-- Desktop 5: Phantom Elite -->
+      <div class="desktop-item" data-name="phantom-elite">
+        <img src="d5.jpeg" alt="Phantom Elite">
+        <h3>Phantom Elite</h3>
+        <p>Sleek and powerful gaming PC.</p>
+        <ul>
+          <li>CPU: Intel i9-13900KF</li>
+          <li>RAM: 32GB DDR5</li>
+          <li>Storage: 1TB SSD + 2TB HDD</li>
+          <li>GPU: RTX 4080</li>
+        </ul>
+        <span>$8,000 BZD</span>
+        <button class="add-to-cart" onclick="addToCart('Phantom Elite', 8000)">Add to Cart</button>
+      </div>
+  
+      <!-- Desktop 6: Nova Lite -->
+      <div class="desktop-item" data-name="nova-lite">
+        <img src="d6.jpeg" alt="Nova Lite">
+        <h3>Nova Lite</h3>
+        <p>Affordable gaming PC for beginners.</p>
+        <ul>
+          <li>CPU: AMD Ryzen 5 7600X</li>
+          <li>RAM: 16GB DDR4</li>
+          <li>Storage: 500GB SSD</li>
+          <li>GPU: RTX 3060</li>
+        </ul>
+        <span>$3,500 BZD</span>
+        <button class="add-to-cart" onclick="addToCart('Nova Lite', 3500)">Add to Cart</button>
+      </div>
+  
+      <!-- Desktop 7: Apex Pro -->
+      <div class="desktop-item" data-name="apex-pro">
+        <img src="d7.jpeg" alt="Apex Pro">
+        <h3>Apex Pro</h3>
+        <p>High-end gaming and productivity PC.</p>
+        <ul>
+          <li>CPU: Intel i7-13700KF</li>
+          <li>RAM: 32GB DDR5</li>
+          <li>Storage: 1TB NVMe SSD</li>
+          <li>GPU: RTX 4070 Ti</li>
+        </ul>
+        <span>$6,500 BZD</span>
+        <button class="add-to-cart" onclick="addToCart('Apex Pro', 6500)">Add to Cart</button>
+      </div>
+  
+      <!-- Desktop 8: Velocity X -->
+      <div class="desktop-item" data-name="velocity-x">
+        <img src="d8.jpeg" alt="Velocity X">
+        <h3>Velocity X</h3>
+        <p>Fast and efficient gaming PC.</p>
+        <ul>
+          <li>CPU: AMD Ryzen 7 7700X</li>
+          <li>RAM: 16GB DDR5</li>
+          <li>Storage: 1TB SSD</li>
+          <li>GPU: RTX 4060</li>
+        </ul>
+        <span>$4,800 BZD</span>
+        <button class="add-to-cart" onclick="addToCart('Velocity X', 4800)">Add to Cart</button>
+      </div>
+  
+      <!-- Desktop 9: Eclipse Pro -->
+      <div class="desktop-item" data-name="eclipse-pro">
+        <img src="d9.jpeg" alt="Eclipse Pro">
+        <h3>Eclipse Pro</h3>
+        <p>Premium gaming PC with advanced cooling.</p>
+        <ul>
+          <li>CPU: Intel i9-13900KS</li>
+          <li>RAM: 64GB DDR5</li>
+          <li>Storage: 2TB NVMe SSD</li>
+          <li>GPU: RTX 4090</li>
+        </ul>
+        <span>$10,000 BZD</span>
+        <button class="add-to-cart" onclick="addToCart('Eclipse Pro', 10000)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+   <!-- Footer -->
+   <footer>
+    <div class="footer-content">
+      <!-- Left Side: WhatsApp Numbers -->
+      <div class="footer-section">
+        <h3>Contact Us on WhatsApp</h3>
+        <ul>
+          <li><a href="https://wa.me/5011234567">+501 123-4567</a></li>
+          <li><a href="https://wa.me/5012345678">+501 234-5678</a></li>
+          <li><a href="https://wa.me/5013456789">+501 345-6789</a></li>
+        </ul>
+      </div>
+
+      <!-- Middle: Email Addresses -->
+      <div class="footer-section">
+        <h3>Email Us</h3>
+        <ul>
+          <li><a href="mailto:support@techtower.com">support@techtower.com</a></li>
+          <li><a href="mailto:sales@techtower.com">sales@techtower.com</a></li>
+          <li><a href="mailto:info@techtower.com">info@techtower.com</a></li>
+        </ul>
+      </div>
+
+      <!-- Middle: Locations -->
+      <div class="footer-section">
+        <h3>Our Locations</h3>
+        <ul>
+          <li><a href="https://maps.app.goo.gl/WmurFi1jDcYjMkwz7" target="_blank">Orange Walk</a></li>
+          <li><a href="https://maps.app.goo.gl/5sSgth7XUNBfuuNh7" target="_blank">Belize City</a></li>
+          <li><a href="https://maps.app.goo.gl/GdhE1dpQNYwkrE3h9" target="_blank">Cayo</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Side: Jobs -->
+      <div class="footer-section">
+        <h3>Jobs</h3>
+        <ul>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc8tH-EK8CVgPwNdVaZNhRnMOlpg4OGz8r_qvM5JM--Op6apg/viewform?usp=sharing">IT Specialist</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc8tH-EK8CVgPwNdVaZNhRnMOlpg4OGz8r_qvM5JM--Op6apg/viewform?usp=sharing">Sales Manager</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc8tH-EK8CVgPwNdVaZNhRnMOlpg4OGz8r_qvM5JM--Op6apg/viewform?usp=sharing">Support Specialist</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>&copy; 2025 TechTower. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

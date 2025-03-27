@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechTower - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo" onclick="window.location.href='index.html'">
+      <img src="logo.png" alt="TechTower Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="desktops.html">Desktops</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." aria-label="Search products">
+      <button onclick="searchProduct()" aria-label="Search">Search</button>
+    </div>
+  </header>
+
+  <!-- Home Content -->
+  <section id="home" class="tab-content active">
+    <div class="entrance">
+      <div class="pc-animation">
+        <img src="custom-pc.png" alt="Custom PC" class="animated-pc">
+      </div>
+      <div class="company-info">
+        <h1>TechTower</h1>
+        <p class="moto">"Powering Your Gaming Dreams"</p>
+        <div class="countdown">
+          <p>Countdown to Big Sale:</p>
+          <span id="timer"></span>
+        </div>
+      </div>
+    </div>
+    <!-- About Us Section -->
+<section class="about-us">
+  <h2>About TechTower</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>Welcome to <strong>TechTower</strong>, your ultimate destination for high-performance gaming and productivity PCs. Founded in 2020, we are passionate about delivering cutting-edge technology tailored to your needs. Whether you're a hardcore gamer, a creative professional, or a tech enthusiast, we’ve got you covered.</p>
+      <p>At TechTower, we specialize in both <strong>prebuilt PCs</strong> and <strong>custom builds</strong>. Our systems are powered by industry-leading brands like <span class="brand-nvidia">NVIDIA</span>, <span class="brand-intel">Intel</span>, <span class="brand-amd">AMD</span>, and <span class="brand-asus">ASUS</span>, ensuring top-tier performance and reliability. Every system is built with premium components and rigorously tested to meet the highest standards.</p>
+      <p>We stand by the quality of our products with a <strong>1-year free warranty</strong> on all PCs. For added peace of mind, you can extend your coverage up to 3 years with our affordable insurance plan at just <strong>$10 BZD per month</strong>. Our team of expert technicians is always here to provide support and guidance, ensuring you get the most out of your TechTower experience.</p>
+      <p>Join the TechTower community today and power your gaming dreams with the best in the business!</p>
+    </div>
+
+    <div class="about-image">
+      <a href="desktops.html" target="_blank">
+      <img src="logo.png" alt="TechTower Team">
+      </a>
+      <p>Our systems are powered by industry-leading brands like 
+        <div class="brand-logos">
+          <a href="https://www.nvidia.com" target="_blank">
+            <img src="nvidia.jpeg" alt="NVIDIA" class="brand-logo">
+          </a>
+          <a href="https://www.intel.com" target="_blank">
+            <img src="intellogo.png" alt="Intel" class="brand-logo">
+          </a>
+          <a href="https://www.amd.com" target="_blank">
+            <img src="amdlogo.png" alt="AMD" class="brand-logo">
+          </a>
+          <a href="https://www.asus.com" target="_blank">
+            <img src="asuslogo.png" alt="ASUS" class="brand-logo">
+          </a>
+        </div>
+        ensuring top-tier performance and reliability.
+      </p>
+    </div>
+  </div>
+</section>
+    <!-- Why Choose Us Section -->
+<section class="why-choose-us">
+  <h2>Why Choose TechTower?</h2>
+  <div class="benefits">
+    <div class="benefit-item">
+      <h3>Prebuilt PCs</h3>
+      <p>We offer a wide range of high-performance prebuilt PCs, perfect for gaming, work, and creativity. Each system is rigorously tested to ensure top-notch performance and reliability.</p>
+    </div>
+    <div class="benefit-item">
+      <h3>Custom Builds</h3>
+      <p>Want a PC tailored to your needs? Our expert technicians will help you design and build a custom PC that matches your exact specifications and budget.</p>
+    </div>
+    <div class="benefit-item">
+      <h3>Warranty & Support</h3>
+      <p>All our PCs come with a <strong>1-year free warranty</strong>. Extend your coverage up to 3 years with our affordable insurance plan at just <strong>$10 BZD per month</strong> for the additional 2 years.</p>
+    </div>
+  </div>
+</section>
+
+<!-- YouTube Video -->
+<div class="video-container">
+  <iframe 
+    id="youtube-video" 
+    width="100%" 
+    height="600" 
+    src="https://www.youtube.com/embed/iN_zYXR2Yrc?autoplay=1&mute=1&loop=1&playlist=iN_zYXR2Yrc" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+
+       <!-- Desktops Content -->
+  <section class="desktop">
+    <h2 class="customgd">New Inventory</h2>
+    <div class="desktop-grid">
+      <!-- Desktop 1: Blaze Pro -->
+      <div class="desktop-item" data-name="blaze-pro">
+        <img src="d1.jpeg" alt="Blaze Pro">
+        <h3>Blaze Pro</h3>
+        <p>High-performance gaming PC with RGB lighting.</p>
+        <ul>
+          <li>CPU: Intel i9-13900K</li>
+          <li>RAM: 32GB DDR5</li>
+          <li>Storage: 1TB NVMe SSD</li>
+          <li>GPU: RTX 4090</li>
+        </ul>
+        <span>$7,500 BZD</span>
+        <button class="add-to-cart" onclick="addToCart('Blaze Pro', 7500)">Add to Cart</button>
+      </div>
+  
+      <!-- Desktop 2: Thunder X -->
+      <div class="desktop-item" data-name="thunder-x">
+        <img src="d2.jpeg" alt="Thunder X">
+        <h3>Thunder X</h3>
+        <p>Mid-range gaming PC for competitive gamers.</p>
+        <ul>
+          <li>CPU: AMD Ryzen 7 7800X</li>
+          <li>RAM: 16GB DDR4</li>
+          <li>Storage: 500GB SSD + 1TB HDD</li>
+          <li>GPU: RTX 4070</li>
+        </ul>
+        <span>$4,500 BZD</span>
+        <button class="add-to-cart" onclick="addToCart('Thunder X', 4500)">Add to Cart</button>
+      </div>
+  
+      <!-- Desktop 3: Frost Nova -->
+      <div class="desktop-item" data-name="frost-nova">
+        <img src="d3.jpeg" alt="Frost Nova">
+        <h3>Frost Nova</h3>
+        <p>Compact gaming PC with liquid cooling.</p>
+        <ul>
+          <li>CPU: Intel i7-13700K</li>
+          <li>RAM: 16GB DDR5</li>
+          <li>Storage: 1TB SSD</li>
+          <li>GPU: RTX 4060 Ti</li>
+        </ul>
+        <span>$5,000 BZD</span>
+        <button class="add-to-cart" onclick="addToCart('Frost Nova', 5000)">Add to Cart</button>
+      </div>
+      </div>
+      </section>
+
+
+   <!-- Custom PC Section -->
+<div class="custom-pc-section">
+  <h2>Build Your Custom Desktop</h2>
+  <p>Need help? Ask one of our expert IT technicians!</p>
+  <button id="ask-technician">Ask a Technician</button>
+
+  <!-- Custom PC Form -->
+  <form id="custom-pc-form">
+    <label for="processor">Processor:</label>
+    <select id="processor" name="processor">
+      <option value="select">Select a processor</option>
+      <option value="i9" data-price="1200">Intel i9 - $1,200 BZD</option>
+      <option value="ryzen7" data-price="800">AMD Ryzen 7 - $800 BZD</option>
+      <option value="ryzen9" data-price="1000">AMD Ryzen 9 - $1,000 BZD</option>
+    </select>
+
+    <label for="ram">RAM Size:</label>
+    <select id="ram" name="ram">
+      <option value="select">Select RAM size</option>
+      <option value="16gb" data-price="200">16GB - $200 BZD</option>
+      <option value="32gb" data-price="350">32GB - $350 BZD</option>
+      <option value="64gb" data-price="600">64GB - $600 BZD</option>
+    </select>
+
+    <label for="storage">Storage:</label>
+    <select id="storage" name="storage">
+      <option value="select">Select storage</option>
+      <option value="500gb" data-price="150">500GB SSD - $150 BZD</option>
+      <option value="1tb" data-price="250">1TB SSD - $250 BZD</option>
+      <option value="2tb" data-price="400">2TB SSD - $400 BZD</option>
+    </select>
+
+    <label for="chassis">Chassis:</label>
+    <select id="chassis" name="chassis">
+      <option value="select">Select chassis</option>
+      <option value="mid-tower" data-price="300">Mid Tower - $300 BZD</option>
+      <option value="full-tower" data-price="450">Full Tower - $450 BZD</option>
+      <option value="mini-itx" data-price="400">Mini ITX - $400 BZD</option>
+    </select>
+    
+    <div class="custom-total">
+      <h4>Estimated Total: <span id="custom-pc-total">$0.00 BZD</span></h4>
+    </div>
+
+   
+    <button type="button" id="proceed-to-payment">Payment</button>
+    <br>
+    <a href="https://www.pcmag.com/how-to/how-to-build-a-pc-the-ultimate-beginners-guide">
+      <button type="button" id="need-help">Need Help?</button>
+    </a>
+  </form>
+</div>
+
+ <!-- Technician Modal -->
+<div id="technicianModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div id="technicianFormContainer">
+      <h3>Request Technician Assistance</h3>
+      <form id="technicianForm">
+        <div class="form-group">
+          <label for="clientName">Your Name:</label>
+          <input type="text" id="clientName" name="clientName" required>
+        </div>
+        <div class="form-group">
+          <label for="whatsappNumber">WhatsApp Number:</label>
+          <input type="tel" id="whatsappNumber" name="whatsappNumber" required>
+        </div>
+        <div class="form-buttons">
+          <button type="button" id="cancelRequest" class="btn cancel-btn">Cancel</button>
+          <button type="submit" id="submitRequest" class="btn submit-btn">Submit Request</button>
+        </div>
+      </form>
+    </div>
+    <div id="confirmationMessage" style="display: none;">
+      <h3>Thank You!</h3>
+      <p>A technician will contact you shortly.</p>
+      <button id="doneButton" class="btn submit-btn">Done</button>
+    </div>
+  </div>
+</div>
+<!-- Payment Modal for Custom PC -->
+<div id="customPcModal" class="modal">
+  <div class="modal-content custom-pc-modal">
+    <span class="close-modal">&times;</span>
+    
+    <div class="receipt-container">
+      <h3>Your Custom PC Order</h3>
+      <div id="custom-pc-receipt">
+        <!-- Receipt items will be populated here -->
+      </div>
+      <div class="receipt-totals">
+        <div class="receipt-row">
+          <span>Subtotal:</span>
+          <span id="custom-subtotal">$0.00</span>
+        </div>
+        <div class="receipt-row">
+          <span>GST (12.5%):</span>
+          <span id="custom-gst">$0.00</span>
+        </div>
+        <div class="receipt-row total">
+          <span>Total:</span>
+          <span id="custom-total">$0.00</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="payment-form-container">
+      <h3>Payment Information</h3>
+      <form id="custom-pc-payment-form">
+        <div class="form-group">
+          <label for="card-name">Name on Card</label>
+          <input type="text" id="card-name" required>
+        </div>
+        <div class="form-group">
+          <label for="card-number">Card Number</label>
+          <input type="text" id="card-number" required placeholder="1234 5678 9012 3456">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="expiry-date">Expiry Date</label>
+            <input type="text" id="expiry-date" required placeholder="MM/YY">
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" required placeholder="123">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="billing-address">Billing Address</label>
+          <textarea id="billing-address" required></textarea>
+        </div>
+        <div class="form-buttons">
+          <button type="button" id="cancel-custom-payment" class="btn cancel">Cancel</button>
+          <button type="submit" id="confirm-custom-payment" class="btn confirm">Confirm Payment</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Confirmation Message -->
+<div id="customPcConfirmation" class="modal">
+  <div class="modal-content confirmation-modal">
+    <div class="confirmation-message">
+      <h3>Thank You for Your Order!</h3>
+      <p>Your custom PC will be built shortly. You'll receive a confirmation email with the details.</p>
+      <button id="donex" class="btn done">Done</button>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <!-- Left Side: WhatsApp Numbers -->
+      <div class="footer-section">
+        <h3>Contact Us on WhatsApp</h3>
+        <ul>
+          <li><a href="https://wa.me/5011234567">+501 123-4567</a></li>
+          <li><a href="https://wa.me/5012345678">+501 234-5678</a></li>
+          <li><a href="https://wa.me/5013456789">+501 345-6789</a></li>
+        </ul>
+      </div>
+
+      <!-- Middle: Email Addresses -->
+      <div class="footer-section">
+        <h3>Email Us</h3>
+        <ul>
+          <li><a href="mailto:support@techtower.com">support@techtower.com</a></li>
+          <li><a href="mailto:sales@techtower.com">sales@techtower.com</a></li>
+          <li><a href="mailto:info@techtower.com">info@techtower.com</a></li>
+        </ul>
+      </div>
+
+      <!-- Middle: Locations -->
+      <div class="footer-section">
+        <h3>Our Locations</h3>
+        <ul>
+          <li><a href="https://maps.app.goo.gl/WmurFi1jDcYjMkwz7" target="_blank">Orange Walk</a></li>
+          <li><a href="https://maps.app.goo.gl/5sSgth7XUNBfuuNh7" target="_blank">Belize City</a></li>
+          <li><a href="https://maps.app.goo.gl/GdhE1dpQNYwkrE3h9" target="_blank">Cayo</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Side: Jobs -->
+      <div class="footer-section">
+        <h3>Jobs</h3>
+        <ul>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc8tH-EK8CVgPwNdVaZNhRnMOlpg4OGz8r_qvM5JM--Op6apg/viewform?usp=sharing">IT Specialist</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc8tH-EK8CVgPwNdVaZNhRnMOlpg4OGz8r_qvM5JM--Op6apg/viewform?usp=sharing">Sales Manager</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc8tH-EK8CVgPwNdVaZNhRnMOlpg4OGz8r_qvM5JM--Op6apg/viewform?usp=sharing">Support Specialist</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>&copy; 2025 TechTower. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
